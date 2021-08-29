@@ -1,6 +1,6 @@
 export const productsList = [
     {
-        id: 1,
+        id: '1',
         title: 'Rabbit',
         description: 'Warm and white.',
         price: 30,
@@ -8,7 +8,7 @@ export const productsList = [
         image: './images/1.jpeg',
     },
     {
-        id: 2,
+        id: '2',
         title: 'Spider',
         description: 'Not a poisonous.',
         price: 999,
@@ -16,7 +16,7 @@ export const productsList = [
         image: './images/2.jpeg',
     },
     {
-        id: 3,
+        id: '3',
         title: 'Puppy',
         description: 'Different, not purebred.',
         price: 15,
@@ -24,7 +24,7 @@ export const productsList = [
         image: './images/3.jpeg',
     },
     {
-        id: 4,
+        id: '4',
         title: 'Turtle',
         description: 'The young male.',
         price: 710,
@@ -32,7 +32,7 @@ export const productsList = [
         image: './images/4.jpeg',
     },
     {
-        id: 5,
+        id: '5',
         title: 'Kitty',
         description: 'Grey britain breed.',
         price: 80,
@@ -40,7 +40,7 @@ export const productsList = [
         image: './images/5.jpeg',
     },
     {
-        id: 6,
+        id: '6',
         title: 'Lizzards',
         description: 'Like a warm and a good nutrition.',
         price: 30,
@@ -48,7 +48,7 @@ export const productsList = [
         image: './images/6.jpeg',
     },
     {
-        id: 7,
+        id: '7',
         title: 'Rat',
         description: 'Cute and funny.',
         price: 5,
@@ -56,7 +56,7 @@ export const productsList = [
         image: './images/7.jpeg',
     },
     {
-        id: 8,
+        id: '8',
         title: 'Сhinchilla',
         description: 'Very fuzzy.',
         price: 1200,
@@ -64,7 +64,7 @@ export const productsList = [
         image: './images/8.jpeg',
     },
     {
-        id: 9,
+        id: '9',
         title: 'Parrot',
         description: 'Very noisy birds.',
         price: 20,
@@ -72,7 +72,7 @@ export const productsList = [
         image: './images/9.jpeg',
     },
     {
-        id: 10,
+        id: '10',
         title: 'Fox',
         description: 'A cat with dog behaviour.',
         price: 925,
