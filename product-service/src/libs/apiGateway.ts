@@ -17,16 +17,16 @@ export const formatJSONResponse = (response: Record<string, unknown> | Record<st
   }
 }
 
-export const ErrorResponse = ( statusCode: ErrorTypes, message: string = '' ) => {
+export const ErrorResponse = ( statusCode: ErrorTypes | number, message: string = '' ) => {
   const errorsMap = {
-    '404': 'Product is not found.',
-    '500': 'Something went wrong.',
+    [ErrorTypes.Err404]: 'Product is not found.',
+    [ErrorTypes.Err500]: 'Something went wrong.',
   };
   return {
     statusCode,
-    body: {
+    body: JSON.stringify({
       message: message || errorsMap[statusCode.toString()],
-    },
+    }),
     headers: {
       'Access-Control-Allow-Methods': '*',
       'Access-Control-Allow-Origin': '*',

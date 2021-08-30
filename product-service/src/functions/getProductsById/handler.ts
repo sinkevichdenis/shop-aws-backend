@@ -12,12 +12,11 @@ export const getProductsById: ValidatedEventAPIGatewayProxyEvent<typeof ParamsTy
         item => item.id === event?.pathParameters?.id
     );
     if (!product) {
-      // @ts-ignore
-      throw new Error(ErrorTypes.Err404);
+      return ErrorResponse(ErrorTypes.Err404);
     }
     return formatJSONResponse(product);
   } catch (error) {
-    ErrorResponse(error.message);
+    return ErrorResponse(error.statusCode, error.message);
   }
 };
 export const main = middyfy(getProductsById);
