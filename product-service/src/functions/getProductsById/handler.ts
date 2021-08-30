@@ -6,7 +6,7 @@ import { ParamsType } from './schema';
 import { productsList } from "../../mock";
 import {ErrorTypes} from "../../types";
 
-const getProductsById: ValidatedEventAPIGatewayProxyEvent<typeof ParamsType> = async (event) => {
+export const getProductsById: ValidatedEventAPIGatewayProxyEvent<typeof ParamsType> = async (event) => {
   try {
     const product = productsList.find(
         item => item.id === event?.pathParameters?.id
